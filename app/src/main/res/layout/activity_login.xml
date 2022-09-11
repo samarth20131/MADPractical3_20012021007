@@ -23,8 +23,8 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="50dp"
+        android:layout_height="670dp"
+        android:layout_marginBottom="100dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,58 +42,98 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.card.MaterialCardView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/materialCardView2"
+                android:layout_width="372dp"
+                android:layout_height="205dp"
+                android:layout_margin="20dp"
                 android:layout_marginHorizontal="20dp"
+                app:cardElevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/image_guni">
+                app:layout_constraintTop_toBottomOf="@+id/image_guni">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="102dp">
 
-                    <android.inputmethodservice.ExtractEditText
+
+                    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                app:layout_constraintTop_toTopOf="@+id/materialCardView2"-->
+                    <!--                app:layout_constraintVertical_bias="0.0"-->
+                    <!--                tools:layout_editor_absoluteX="-66dp">-->
+
+                    <TextView
+                        android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="20dp"
-                        android:textColor="@color/black"
+                        android:layout_margin="20"
+                        android:padding=""
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
                         android:text="Email"
-                        android:hint="@string/Email"
+                        android:textSize="30dp"
+                        tools:layout_editor_absoluteX="20dp" />
 
+                    <Button
 
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="parent">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="150dp"
+                        android:padding="10dp"
+                        android:text="Login"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="152dp" />
 
-                    </android.inputmethodservice.ExtractEditText>
-
-
-                    <!--                    <TextView-->
-                    <!--                        android:layout_width="wrap_content"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:text="Email"-->
-                    <!--                        android:layout_margin="20dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toBottomOf="@id/email"-->
-                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                        android:id="@+id/passwd"-->
-                    <!--                        android:paddingHorizontal="50dp"-->
-                    <!--                        android:paddingVertical="20dp"-->
-                    <!--                        android:textAlignment="gravity">-->
-
-                    <!--                    </TextView>-->
-
-                    <!--                    <Button-->
-                    <!--                        android:layout_width="wrap_content"-->
-                    <!--                        android:layout_height="wrap_content"-->
-                    <!--                        android:text="Login"-->
-                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+                    <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                    app:layout_constraintTop_toBottomOf="@id/image_guni" />-->
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_margin="20"
+                    android:padding=""
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Email"
+                    android:textSize="30dp" />
+
             </com.google.android.material.card.MaterialCardView>
+
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Email"-->
+            <!--                        android:layout_margin="20dp"-->
+            <!--                        app:layout_constraintStart_toStartOf="parent"-->
+            <!--                        app:layout_constraintTop_toBottomOf="@id/email"-->
+            <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                        android:id="@+id/passwd"-->
+            <!--                        android:paddingHorizontal="50dp"-->
+            <!--                        android:paddingVertical="20dp"-->
+            <!--                        android:textAlignment="gravity">-->
+
+            <!--                    </TextView>-->
+
+            <!--                    <Button-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Login"-->
+            <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                        app:layout_constraintStart_toStartOf="parent"-->
+            <!--                        app:layout_constraintTop_toTopOf="parent" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.core.widget.NestedScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
