@@ -38,7 +38,7 @@
                 android:src="@drawable/guni_pink_logo" />
 
             <com.google.android.material.card.MaterialCardView
-
+                android:id="@+id/mcv"
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
                 android:layout_marginHorizontal="20dp"
@@ -120,17 +120,46 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom=""
-                android:text="Login"
-                app:layout_anchor="@+id/nestedScrollView" />
+
 
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130"
+        android:layout_height="wrap_content"
+        android:layout_margintop="450dp"
+        android:layout_marginLeft="140dp"
+        android:padding="10dp"
+        android:text="Register"
+        android:textSize="17"
+        app:layout_anchor="@+id/mcv"
+        app:layout_anchorGravity="bottom" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account?"
+        android:textSize="20dp"
+        android:id="@+id/acc"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:id="@+id/acc"
+        android:textStyle="bold"
+        android:textColor="#DB3D91"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
