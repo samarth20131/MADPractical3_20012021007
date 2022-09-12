@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegistrationActivity">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,39 +17,118 @@
             android:layout_height="?attr/actionBarSize" />
 
     </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="884dp"
         android:layout_marginBottom="50dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
             <ImageView
                 android:id="@+id/img_guni"
-
-                android:src="@drawable/guni_pink_logo"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"/>
+                android:layout_height="100dp"
+                android:src="@drawable/guni_pink_logo" />
+
             <com.google.android.material.card.MaterialCardView
 
-                android:layout_marginHorizontal="20dp"
-                app:cardElevation="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="380dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardElevation="20dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Login"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10"
+                        android:drawableRight="@drawable/ic_baseline_person_24"
+                        android:text="User Full Name"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10"
+                        android:drawableRight="@drawable/ic_baseline_phone_android_24"
+                        android:text="Phone Number"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10"
+                        android:drawableRight="@drawable/ic_baseline_location_city_24"
+                        android:text="City"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10"
+                        android:drawableRight="@drawable/ic_baseline_email_24"
+                        android:text="Email"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10"
+                        android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+                        android:text="Password"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10"
+                        android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+                        android:text="Confirm Password"
+                        android:textSize="20"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
                 </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom=""
+                android:text="Login"
+                app:layout_anchor="@+id/nestedScrollView" />
+
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

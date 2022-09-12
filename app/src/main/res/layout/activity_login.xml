@@ -33,6 +33,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/matertalcardview"
                 android:layout_width="380dp"
@@ -60,7 +61,7 @@
                         android:layout_width="350dp"
                         android:layout_height="80dp"
                         android:layout_margin="20dp"
-                        android:padding="10dp"
+                        android:padding="15dp"
                         android:text="E-mail"
                         android:drawableRight="@drawable/ic_baseline_email_24"
                         android:textColor="@color/cardview_dark_background"
@@ -75,7 +76,7 @@
                         android:layout_width="350dp"
                         android:layout_height="80dp"
                         android:layout_margin="10dp"
-                        android:padding="10dp"
+                        android:padding="15dp"
                         android:text="Password"
                         android:textColor="@color/cardview_dark_background"
                         android:drawableRight="@drawable/ic_baseline_vpn_key_24"
@@ -122,13 +123,14 @@
         app:layout_scrollFlags="scroll|enterAlways|snap" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="150dp"
         android:padding="10dp"
         android:text="Login"
         app:layout_anchor="@+id/nestedScrollView3"
-        app:layout_anchorGravity="center"/>
+        app:layout_anchorGravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -157,3 +159,4 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
