@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MADPractical3_20012021007/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1995" />
         <entry key="..\:/MADPractical3_20012021007/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2305" />
-        <entry key="..\:/MADPractical3_20012021007/app/src/main/res/layout/activity_login.xml" value="0.18432971014492755" />
-        <entry key="..\:/MADPractical3_20012021007/app/src/main/res/layout/activity_main.xml" value="0.4186851211072664" />
+        <entry key="..\:/MADPractical3_20012021007/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/MADPractical3_20012021007/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/MADPractical3_20012021007/app/src/main/res/layout/activity_registration.xml" value="0.23229166666666667" />
         <entry key="..\:/MADPractical3_20012021007/app/src/main/res/menu/navigation_menu.xml" value="0.23229166666666667" />
       </map>
