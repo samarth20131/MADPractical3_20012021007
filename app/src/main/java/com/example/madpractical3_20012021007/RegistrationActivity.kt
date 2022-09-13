@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityRegistrationBinding.inflate(layoutInflater)//inflater pass xml
-        setContentView(binding.root)
+        setContentView(R.layout.activity_registration)
 
         setSupportActionBar(binding.toolbar)
     }

@@ -18,20 +18,25 @@
             android:label="Registration UI-MAD Practical"
             android:name=".RegistrationActivity"
             android:exported="false" />
+
         <activity
             android:noHistory="true"
             android:label="Login UI-MAD Practical"
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
-    </application>
 
+    </application>
 </manifest>
