@@ -39,7 +39,7 @@
                 android:src="@drawable/guni_pink_logo" />
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/mcv"
+                android:id="@+id/mcv2"
                 android:layout_width="match_parent"
                 android:layout_height="450"
                 android:layout_margin="20dp"
