@@ -39,9 +39,9 @@
                 android:src="@drawable/guni_pink_logo" />
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/mcv2"
+                android:id="@+id/mcv"
                 android:layout_width="match_parent"
-                android:layout_height="450"
+                android:layout_height="450dp"
                 android:layout_margin="20dp"
                 app:cardElevation="20dp">
 
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="User Full Name  "
                         app:endIconDrawable="@drawable/ic_baseline_person_24"
                         app:endIconMode="custom"
@@ -71,7 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="Phone Number"
                         app:endIconDrawable="@drawable/ic_baseline_phone_android_24"
                         app:endIconMode="custom"
@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="City"
                         app:endIconDrawable="@drawable/ic_baseline_location_city_24"
                         app:endIconMode="custom"
@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="Email"
                         app:endIconDrawable="@drawable/ic_baseline_email_24"
                         app:endIconMode="custom"
@@ -119,7 +119,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="Password"
                         app:endIconDrawable="@drawable/ic_baseline_vpn_key_24"
                         app:endIconMode="custom"
@@ -136,7 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginRight="10"
+                        android:layout_marginRight="10dp"
                         android:hint="Confirm Password"
                         app:endIconDrawable="@drawable/ic_baseline_vpn_key_24"
                         app:endIconMode="custom"
@@ -173,7 +173,7 @@
                     android:id="@+id/login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20"
+                    android:layout_marginLeft="20dp"
                     android:text="LOGIN"
                     android:textColor="#DB3D91"
                     android:textSize="20dp"
@@ -182,18 +182,30 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17dp"
+                android:elevation="50dp"
+                android:layout_marginTop="-95dp"
+                app:layout_anchor="@id/mcv"
+                android:text="Register"
+                android:orientation="horizontal"/>
+
         </LinearLayout>
 
+
     </androidx.core.widget.NestedScrollView>
-    <Button
-        android:layout_width="wrap_content"
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigationview"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="600"
-        android:textSize="17"
-        android:layout_marginLeft="145dp"
-        app:layout_anchor="@id/mcv"
-        android:text="Register"
-        android:orientation="horizontal"/>
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/navigation_menu"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

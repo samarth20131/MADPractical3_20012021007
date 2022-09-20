@@ -7,15 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schema.android.com/apk/res/res-auto"
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:layout_marginTop="650"
-        android:layout_gravity="start"
-        app:menu="@menu/my_navigation_items" />
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -46,14 +38,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@id/toolbar"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/matertalcardview"
                 android:layout_width="380dp"
-                android:layout_height="265dp"
+                android:layout_height="245dp"
                 android:elevation="5dp"
                 app:cardElevation="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -70,108 +61,115 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/img_guni">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:id="@+id/email"
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginVertical="20dp"
+                        android:hint="Email"
+                        app:endIconDrawable="@drawable/ic_baseline_email_24"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/pink">
+
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="Email"
-                            app:endIconDrawable="@drawable/ic_baseline_email_24"
-                            app:endIconMode="custom"
-                            app:endIconTint="@color/pink">
+                            android:inputType="textEmailAddress" />
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
 
-                        <com.google.android.material.textfield.TextInputLayout
+                        app:layout_constraintTop_toBottomOf="@id/email"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/email"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:id="@+id/pass"
+                        android:hint="Password"
+                        app:endIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/pink">
 
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_below="@+id/email"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="Password"
-                            app:endIconDrawable="@drawable/ic_baseline_vpn_key_24"
-                            app:endIconMode="custom"
-                            app:endIconTint="@color/pink">
+                            android:inputType="textPassword"/>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="textPassword"/>
-                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                         <TextView
                             android:id="@+id/fp"
+                            app:layout_constraintTop_toBottomOf="@id/pass"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="180"
-                            android:layout_marginTop="170dp"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginHorizontal="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             android:text="Forgot Password?"
                             android:textSize="20dp" />
-                    </RelativeLayout>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
-
-
-<!--    </com.google.android.material.card.MaterialCardView>-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--    </androidx.core.widget.NestedScrollView>-->
-
-<com.google.android.material.appbar.MaterialToolbar
-android:id="@+id/toolbar"
-android:layout_width="match_parent"
-android:layout_height="?attr/actionBarSize"
-app:layout_anchor="@+id/appBarLayout"
-app:layout_anchorGravity="bottom|center"
-app:layout_scrollFlags="scroll|enterAlways|snap" />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_scrollFlags="scroll|enterAlways|snap" />
 
     <Button
-    android:id="@+id/button"
-    android:layout_width="130"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="400dp"
-    android:layout_marginLeft="140dp"
-    android:padding="10dp"
-    android:text="Login"
-    android:textSize="17"
-    app:layout_anchor="@+id/nestedScrollView3"
-    app:layout_anchorGravity="center" />
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="140dp"
+        android:padding="10dp"
+        android:text="Login"
+        android:textSize="25sp"
+        app:layout_anchor="@+id/nestedScrollView3"
+        app:layout_anchorGravity="center" />
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Don't have an account?"
-    android:textSize="20dp"
-    android:id="@+id/dacc"
-    android:layout_marginTop="500dp"
-    android:layout_marginLeft="20dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="20dp"
+        android:id="@+id/textview1"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="SIGN UP"
-    android:textSize="20dp"
-    android:id="@+id/signup"
-    android:textStyle="bold"
-    android:textColor="#DB3D91"
-    android:layout_marginTop="500dp"
-    android:layout_marginLeft="250dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#DB3D91"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="250dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textview1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigationview"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/navigation_menu"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
