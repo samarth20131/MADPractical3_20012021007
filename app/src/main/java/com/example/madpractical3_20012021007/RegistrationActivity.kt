@@ -34,5 +34,6 @@ class RegistrationActivity : AppCompatActivity() {
             }
             return@setOnItemSelectedListener true
         }
+
     }
 }

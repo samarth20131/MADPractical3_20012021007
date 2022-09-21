@@ -126,14 +126,14 @@
         app:layout_scrollFlags="scroll|enterAlways|snap" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_login"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="395dp"
         android:layout_marginLeft="140dp"
         android:padding="10dp"
         android:text="Login"
-        android:textSize="25sp"
+        android:textSize="19sp"
         app:layout_anchor="@+id/nestedScrollView3"
         app:layout_anchorGravity="center" />
 
